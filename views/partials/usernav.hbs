@@ -1,0 +1,49 @@
+
+<div class="Header">
+    <div class="Contents">
+        <img class="logoImg" src="https://cdn.logojoy.com/wp-content/uploads/2018/05/18143926/1365.png" alt="">
+        <form action="" class="form">
+            <input class="searchBar" placeholder="Search for products and brands and more" type="text">
+            <input class="Button" type="submit">
+    
+        </form>
+        
+         
+               {{#if user}}
+         <a href="" class="more"></a>
+         <div class="dropdown ">
+  <button class="dropbtn">{{user.username}}</button>
+  <div class="dropdown-content">
+    <a href="/logout">Logout</a>
+
+   
+  </div>
+</div>
+
+         {{!-- <div class="dropdown"> --}}
+           {{!-- <a class="userlogin" href="/userlogin">{{user.username}}</a> --}}
+          {{!-- <div class="dropdown-content"> --}}
+              {{!-- <a href="/logout" style="text-decoration:none;color:rgb(12, 12, 12)"> <b>Logout</b> </a>
+  </div>
+</div> --}}
+         {{else}}
+          <a href="" class="more">More</a>
+           <a class="userlogin" href="/userlogin">Login</a>
+         {{/if}}
+          {{!-- <a href="/userlogin" class="userlogin" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a> --}}
+            
+         <html>
+<head>
+    {{!-- <a href="" class="more"></a>
+    <a class="userlogin" href="/userlogin">Login</a>  --}}
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div>
+        <button class="iconButton" style="font-size:24px"> <span class="icon" > <b style="font-size:18px;">Cart <i class="fa fa-shopping-cart icon"></i></b> </i></span> </i></button>
+
+    </div>
+    </div>
+</div>
